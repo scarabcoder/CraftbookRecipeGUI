@@ -1,0 +1,4 @@
+name: config-converter
+version: 1.0-SNAPSHOT
+main: com.scarabcoder.configconverter.ConfigConverter
+author: Nicholas Harris (ScarabCoder)

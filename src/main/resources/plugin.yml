@@ -1,0 +1,4 @@
+name: ${project.name}
+version: ${project.version}
+main: com.scarabcoder.configconverter.ConfigConverter
+author: Nicholas Harris (ScarabCoder)
