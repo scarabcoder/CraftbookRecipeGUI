@@ -25,6 +25,14 @@ import java.util.List;
 public class ConfigConverter extends JavaPlugin implements CommandExecutor{
 
     public void onEnable(){
+        File template = new File(this.getDataFolder(), "template.yml");
+        if(!template.exists()){
+            try {
+                FileUtils.copyInputStreamToFile(this.getResource("template.yml"), template);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
         this.generateConfig();
         getServer().dispatchCommand(getServer().getConsoleSender(), "cc reload");
     }
