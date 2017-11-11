@@ -1,4 +1,8 @@
-name: ${project.name}
+name: CraftbookRecipeGUI
 version: ${project.version}
 main: com.scarabcoder.configconverter.ConfigConverter
 author: Nicholas Harris (ScarabCoder)
+depend: [ChestCommands, CraftBook]
+commands:
+  configgen:
+    description: Generate the configs

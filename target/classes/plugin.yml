@@ -1,4 +1,8 @@
-name: config-converter
+name: CraftbookRecipeGUI
 version: 1.0-SNAPSHOT
 main: com.scarabcoder.configconverter.ConfigConverter
 author: Nicholas Harris (ScarabCoder)
+depend: [ChestCommands, CraftBook]
+commands:
+  configgen:
+    description: Generate the configs
